@@ -13,6 +13,8 @@ struct ContentView: View {
     @State var text = false
     var body: some View {
         VStack{
+            Text("Ejemplo de botones")
+                .font(.title)
             ZStack{
                 Color(lamp ? .black : .white)
                 Button(action: {
@@ -26,7 +28,7 @@ struct ContentView: View {
                 Button(action: {
                     face.toggle()
                 }) {
-                    Text(face ? "😜" : "😈").font(.system(size:100))
+                    Text(face ? "🫥🫡" : "😈").font(.system(size:100))
                 }
             }
         }
